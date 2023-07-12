@@ -15,6 +15,7 @@ target_sources(${PROJECT} PRIVATE
 target_include_directories(${PROJECT} PRIVATE ${CMAKE_CURRENT_LIST_DIR})
 target_link_libraries(${PROJECT}
      pico_stdlib
+     hardware_uart
 )
 pico_add_extra_outputs(${PROJECT})
 pico_enable_stdio_usb(${PROJECT} 1)
